@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Presentation</title>
+    <!--STYLES-->
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        article {
+            max-width: 48em;
+            /* choose whatever width you'd like.
+                             "em" is one character */
+        }
+
+        .dot {
+            height: 50px;
+            width: 50px;
+            background-color: green;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #teal {
+            color: teal;
+        }
+
+        #tan {
+            color: tan
+        }
+    </style>
+</head>
+<!--MAIN-->
+
+<body>
+    <main>
+        <article>
+            <!--INTRO-->
+            <h1 id='teal'>Borders and Border-radius</h1>
+            <p>Here are some important things to know about borders:</p>
+
+            <li>Borders are supported on most main browsers</li>
+            <li>There are three primary properties to borders, border-width, border-style, border-color</li>
+            <!--PROPERTIES-->
+            <h3>Border Properties</h3>
+            <h4 id="tan">Style</h4>
+            <p>The style is where you can really have fun with borders, here are a few options.</p>
+            <ul>
+                <li style='border-style: dotted;'>Dotted</li>
+                <li style='border-style: dashed;'>Dashed</li>
+                <li style='border-style: solid;'>Solid</li>
+                <li style='border-style: double;'>Double</li>
+                <li style='border-style: groove;'>Groove</li>
+                <li style='border-style: inset;'>Inset</li>
+                <li style='border-style: ridge;'>Ridge</li>
+                <li style='border-style: outset;'>Outset</li>
+
+            </ul>
+            <h4 id="tan">Color</h4>
+            <p>You can use whatever color is best by just typing it in.</p>
+            <p style='border-style: solid; border-width: 3px; border-color: green;display:inline;'>Here's a green one
+            </p>
+            <p>Note: If you want it to fit the text like above ^ just add <em>display:inline;</em> in the styles.</p>
+            <h4 id="tan">Width</h4>
+            <p>Similar to color, you just pick what width works best.</p>
+            <li>You can also just type "medium", "thick", or "thin" instead of px</li>
+            <li>If you want variety, you can use the border border-width property: TOPpx RIGHTpx BOTTOMpx LEFTpx</li>
+            <p style='border-style: solid; border-width: 5px;'>You can do fat borders</p>
+            <p style='border-style: solid; border-width: 1px;'>and skinny borders</p>
+            <p style='border-style: solid; border-width: 1px 3px 6px 10px;'>Here's some variety</p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ExbPajw"
+                data-user="izzysampson"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/izzysampson/pen/ExbPajw">
+                        Untitled</a> by Izzy Sampson (<a href="https://codepen.io/izzysampson">@izzysampson</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <!--BORDER SIDES-->
+            <h3 id='teal'>Sides</h3>
+            </ul>
+            <p style='border-style: solid;'>You can do regular borders</p>
+            <p style='border-bottom-style: solid;'>You can just do bottom borders</p>
+            <p style='border-left-style: solid;'>You can do left borders</p>
+            </ul>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="VwreYGN"
+                data-user="izzysampson"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/izzysampson/pen/VwreYGN">
+                        Untitled</a> by Izzy Sampson (<a href="https://codepen.io/izzysampson">@izzysampson</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <h3 id='teal'>Rounded Borders</h3>
+            <p style="border-style: solid; border-radius: 7px;">To get rounded borders, just add a
+                <em>border-radius</em>
+                propety and a specific size.
+            </p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxPZbwp"
+                data-user="izzysampson"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/izzysampson/pen/xxPZbwp">
+                        Untitled</a> by Izzy Sampson (<a href="https://codepen.io/izzysampson">@izzysampson</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <!--SHORTCUTS-->
+            <h3 id='teal'>Shortcuts!</h3>
+            <p>If you want a quicker way to format borders, use this shortcut.</p>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYWLEQo"
+                data-user="izzysampson"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/izzysampson/pen/vYWLEQo">
+                        Untitled</a> by Izzy Sampson (<a href="https://codepen.io/izzysampson">@izzysampson</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+            <!--ADDING A CIRCLE-->
+            <h2 id='teal'>Adding a Circle Using CSS</h2>
+            <h4 id="tan">Step 1: Add the HTML</h4>
+            <p>Use a <em>span</em> tag and create a <em>class</em> to connect it the the CSS.</p>
+            <h4 id="tan">Step 2: Add the CSS</h4>
+            <p>In a <em>style</em> tag or in a CSS sheet, add specifications for your class tag. Having matching height
+                and width creates a circle.</p>
+            <span class="dot"></span>
+            <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwjrNWE"
+                data-user="izzysampson"
+                style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <span>See the Pen <a href="https://codepen.io/izzysampson/pen/RwjrNWE">
+                        Untitled</a> by Izzy Sampson (<a href="https://codepen.io/izzysampson">@izzysampson</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
+            <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        </article>
+    </main>
+
+</body>
+
+</html>
